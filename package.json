@@ -1,0 +1,23 @@
+{
+  "name": "swayer-starter-app",
+  "version": "1.0.0",
+  "description": "Initial Swayer application",
+  "type": "module",
+  "scripts": {
+    "start": "swr serve",
+    "start:ssr": "swr serve --ssr",
+    "build": "swr build && swr render dist/main.js --output dist/index.html --pretty",
+    "build:ssr": "swr build && swr render dist/main.js --output dist/index.html --pretty --ssr",
+    "build:prod": "swr build --prod && swr render dist/main.js --output dist/index.html --ssr"
+  },
+  "dependencies": {
+    "swayer": "github:metarhia/swayer#feat/framework-enhancements"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-config-metarhia": "^8.1.0",
+    "typescript": "^4.9.4"
+  }
+}
