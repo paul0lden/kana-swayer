@@ -1,4 +1,4 @@
-import * as hiragana from './data/hiragana.js';
+import * as hiragana from './data/kanas/hiragana.js';
 import { getKeys } from './utils.js';
 
 /**

@@ -14,6 +14,11 @@ export default {
       styles: {
         fontFamily: 'Roboto',
         textAlign: 'center',
+        backgroundColor: '#455766',
+        margin: 0,
+        boxSizing: 'border-box',
+        height: '100vh',
+        padding: '40px',
       },
       children: [
         {
@@ -44,15 +49,6 @@ export default {
               input: model,
             },
           ],
-        },
-        {
-          tag: 'p',
-          text: (state) =>
-            state.valid === true
-              ? 'valid'
-              : state.valid === false
-                ? 'invalid'
-                : ' ',
         },
       ],
     },
